@@ -1,0 +1,5 @@
+/root/autodl-tmp/intelligent_album/uploads/1/boat.jpg
+/root/autodl-tmp/intelligent_album/uploads/1/football.jpg
+/root/autodl-tmp/intelligent_album/uploads/1/plane.jpg
+/root/autodl-tmp/intelligent_album/uploads/1/sunset.jpg
+/root/autodl-tmp/intelligent_album/uploads/1/tree_and_dog.jpg

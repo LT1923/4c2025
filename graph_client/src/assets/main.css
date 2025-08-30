@@ -1,0 +1,51 @@
+@import './base.css';
+
+#app {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: normal;
+    overflow: hidden; /* 防止应用层级出现滚动条 */
+}
+
+/* 隐藏滚动条但保留滚动功能 */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: none;
+}
+
+/* IE和Edge */
+* {
+    -ms-overflow-style: none;
+}
+
+a,
+.green {
+    text-decoration: none;
+    color: hsla(160, 100%, 37%, 1);
+    transition: 0.4s;
+    padding: 3px;
+}
+
+@media (hover: hover) {
+    a:hover {
+        background-color: hsla(160, 100%, 37%, 0.2);
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        place-items: center;
+        overflow: hidden; /* 防止body出现滚动条 */
+    }
+
+    #app {
+        width: 100%;
+    }
+}

@@ -1,0 +1,5 @@
+/root/autodl-tmp/intelligent_album/uploads/1/sunset.jpg#0 sunset
+/root/autodl-tmp/intelligent_album/uploads/1/football.jpg#0 football
+/root/autodl-tmp/intelligent_album/uploads/1/plane.jpg#0 plane
+/root/autodl-tmp/intelligent_album/uploads/1/tree_and_dog.jpg#0 tree_and_dog
+/root/autodl-tmp/intelligent_album/uploads/1/boat.jpg#0 boat
