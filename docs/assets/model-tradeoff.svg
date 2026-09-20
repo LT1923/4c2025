@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">模型体积与 CIRCO mAP@5 的权衡</title>
+  <desc id="desc">四种 BGE-VL 模型档位的体积和 CIRCO mAP@5 对比。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef4ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#243b64" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1100" height="620" rx="24" fill="url(#bg)"/>
+  <rect x="34" y="28" width="1032" height="564" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="72" y="70" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#17233c">Model compression: size vs. retrieval quality</text>
+  <text x="72" y="98" font-family="Arial, sans-serif" font-size="14" fill="#63708a">CIRCO benchmark · values from the project report</text>
+
+  <text x="88" y="136" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#243b64">Model size (MB)</text>
+  <text x="88" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#243b64">CIRCO mAP@5</text>
+
+  <!-- gridlines -->
+  <g stroke="#dbe4f2" stroke-width="1">
+    <line x1="120" y1="300" x2="1000" y2="300"/>
+    <line x1="120" y1="255" x2="1000" y2="255"/>
+    <line x1="120" y1="210" x2="1000" y2="210"/>
+    <line x1="120" y1="165" x2="1000" y2="165"/>
+    <line x1="120" y1="120" x2="1000" y2="120"/>
+    <line x1="120" y1="540" x2="1000" y2="540"/>
+    <line x1="120" y1="495" x2="1000" y2="495"/>
+    <line x1="120" y1="450" x2="1000" y2="450"/>
+    <line x1="120" y1="405" x2="1000" y2="405"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12" fill="#7b879d" text-anchor="end">
+    <text x="110" y="304">0</text><text x="110" y="259">150</text><text x="110" y="214">300</text><text x="110" y="169">450</text><text x="110" y="124">600</text>
+    <text x="110" y="544">0</text><text x="110" y="499">10</text><text x="110" y="454">20</text><text x="110" y="409">30</text>
+  </g>
+
+  <!-- size bars -->
+  <g>
+    <rect x="170" y="128" width="130" height="172" rx="8" fill="#6c63ff"/>
+    <rect x="390" y="169" width="130" height="131" rx="8" fill="#29b6f6"/>
+    <rect x="610" y="220" width="130" height="80" rx="8" fill="#f59e0b"/>
+    <rect x="830" y="261" width="130" height="39" rx="8" fill="#ef476f"/>
+    <g font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#17233c" text-anchor="middle">
+      <text x="235" y="119">570.90</text><text x="455" y="160">436.04</text><text x="675" y="211">267.34</text><text x="895" y="252">130.16</text>
+    </g>
+  </g>
+
+  <!-- mAP bars -->
+  <g>
+    <rect x="170" y="389" width="130" height="151" rx="8" fill="#6c63ff"/>
+    <rect x="390" y="416" width="130" height="124" rx="8" fill="#29b6f6"/>
+    <rect x="610" y="457" width="130" height="83" rx="8" fill="#f59e0b"/>
+    <rect x="830" y="494" width="130" height="46" rx="8" fill="#ef476f"/>
+    <g font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#17233c" text-anchor="middle">
+      <text x="235" y="380">33.56</text><text x="455" y="407">27.51</text><text x="675" y="448">18.34</text><text x="895" y="485">10.23</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13" fill="#4e5b73" text-anchor="middle">
+    <text x="235" y="326">BGE-VL</text>
+    <text x="455" y="326">Text ternary</text>
+    <text x="675" y="326">Image ternary</text>
+    <text x="895" y="326">Full ternary</text>
+    <text x="235" y="566">570.90 MB</text>
+    <text x="455" y="566">436.04 MB</text>
+    <text x="675" y="566">267.34 MB</text>
+    <text x="895" y="566">130.16 MB</text>
+  </g>
+  <text x="770" y="74" font-family="Arial, sans-serif" font-size="14" fill="#ef476f" font-weight="700">Full ternary: -77.20%</text>
+  <text x="770" y="92" font-family="Arial, sans-serif" font-size="13" fill="#29b6f6">Text ternary: best tradeoff</text>
+</svg>
